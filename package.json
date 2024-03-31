@@ -1,12 +1,11 @@
 {
-  "name": "6c3zdc--run",
+  "name": "antd-concepts",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "antd": "5.16.0",
-    "@ant-design/icons": "5.3.6",
     "@types/react": "18.2.73",
     "@types/react-dom": "18.2.23"
   },
