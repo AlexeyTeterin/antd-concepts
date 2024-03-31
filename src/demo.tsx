@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './index.css';
-import { Button, ButtonProps, Divider, Flex, Space, Typography } from 'antd';
+import { Button, ButtonProps, Flex, Space, Typography } from 'antd';
 import { ReloadOutlined } from '@ant-design/icons';
 
 type ToggleButtonProps = ButtonProps & {
@@ -9,13 +9,13 @@ type ToggleButtonProps = ButtonProps & {
 
 const ToggleButton = ({ checked, children, ...props }: ToggleButtonProps) => {
   return (
-    <Button {...props} className={checked ? 'checked' : null}>
+    <Button {...props} className={checked ? 'checked' : undefined}>
       {children}
     </Button>
   );
 };
 
-const App: React.FC = () => {
+export const Demo: React.FC = () => {
   const [primaryChecked, setPrimaryChecked] = useState(false);
   const [deafultChecked, setDeafultChecked] = useState(false);
 
@@ -86,5 +86,3 @@ const App: React.FC = () => {
     </Space>
   );
 };
-
-export default App;
